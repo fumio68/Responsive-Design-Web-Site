@@ -1,0 +1,76 @@
+.history{
+  background-color: #5D9AB2;
+  background-color: $main-color;
+  color: #fff;
+  color: $text-bright-color;
+  &__container{
+    &__photo{
+      min-height: 300px;
+      background-image: url(../img/plant.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    &__content{
+      padding: 20px;
+      &__title{
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+      }
+      &__text{
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 1.8;
+        opacity: 0.8;
+      }
+      &__link{
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 30px;
+        border: 3px solid currentColor;
+        border-radius: 6px;
+        background-color: $accent-color;
+        color: $text-bright-color;
+        font-size: 14px;
+        text-decoration: none;
+        &:hover{
+          background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2));
+        }
+      }
+      & table {
+        border-top: 1px solid #ddd;
+        border-top: 1px solid $gray-color;
+        border-collapse: collapse;
+        font-size: 0.875rem;
+      }
+      & th, td {
+        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid $gray-color;
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
+      }
+      & th {
+        padding-right: 1rem;
+        text-align-last: left;
+        word-break: keep-all;
+      }
+    }
+  }
+}
+
+@include tab {
+  .history{
+    &__container{
+      display: flex;
+      max-width: 1000px;
+      max-width: $large-width;
+      margin: 0 auto;
+      &__photo{
+        flex: 3;
+      }
+      &__content{
+        flex: 2;
+        padding: 50px;
+      }
+    }
+  }
+}

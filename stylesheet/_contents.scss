@@ -1,0 +1,46 @@
+// コンテンツページ:  記事
+.post {
+  &__container {
+    max-width: 800px;
+    max-width: $middle-width;
+    margin: 0 auto;
+    padding: 30px 10px;
+    &__title {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      padding-left: 0.5rem;
+      border-left: 0.75rem solid #BF6A7A;
+      border-left: 0.75rem solid $accent-color;
+    }
+    & p {
+      font-size: 1rem;
+      line-height: 2;
+    }
+    & img {
+      max-width: 100%;
+    }
+    &__bread {
+      & ol {
+        list-style: none;
+        display: flex;
+        margin-bottom: 5px;
+        & a {
+          color: inherit;
+          font-size: 0.875rem;
+          text-decoration: none;
+          display: block;
+          padding: 5px;
+          &:hover {
+            background-color: rgba(0, 0, 0, .3);
+          }
+        }
+        & span {
+          display: block;
+          line-height: 2em;
+          margin-left: 5px;
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+}

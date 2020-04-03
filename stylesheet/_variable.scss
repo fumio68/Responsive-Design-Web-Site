@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+// 基本色
+$main-color: #5D9AB2;
+$accent-color: #BF6A7A;
+$dark-color: #2B5566;
+$text-bright-color: #fff;
+$icon-color: #fff;
+$icon-bk-color: #ddd;
+$gray-color: #ddd;
+$large-width: 1000px;
+$middle-width: 800px;
+
+// ブレイクポイント
+$tab: 768px;
+
+$phone: 600px;
+$pc: 800px;
+
+// 基本設定：ページ全体
+body {
+  font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+}
+
+
